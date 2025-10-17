@@ -39,7 +39,7 @@ const AboutAntd = () => {
           <Col xs={24} lg={12} style={{ textAlign: 'center' }}>
             <Avatar
               src={AboutImg}
-              size={280}
+              size={{ xs: 200, sm: 240, md: 280 }}
               style={{ 
                 border: '4px solid #f0f0f0',
                 boxShadow: '0 4px 20px rgba(0,0,0,0.1)'

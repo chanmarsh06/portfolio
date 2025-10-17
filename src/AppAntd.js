@@ -1,39 +1,34 @@
 import React from 'react';
 import { Layout, BackTop } from 'antd';
 import { ArrowUpOutlined } from '@ant-design/icons';
-import 'antd/dist/reset.css';
 import './App.css';
 
-// Import Ant Design components
 import HeaderAntd from './components/header/HeaderAntd';
-import Home from './components/home/Home';
+import HomeAntd from './components/home/HomeAntd';
 import AboutAntd from './components/about/AboutAntd';
 import SkillsAntd from './components/skills/SkillsAntd';
 import ServiceAntd from './components/services/ServiceAntd';
-import Qualification from './qualification/Qualification';
-import Testimonial from './components/testimonial/Testimonial';
+import QualificationAntd from './qualification/QualificationAntd';
+import TestimonialAntd from './components/testimonial/TestimonialAntd';
 import ContactAntd from './components/contact/ContactAntd';
-import Footer from './components/footer/Footer';
-
+import FooterAntd from './components/footer/FooterAntd';
 const { Content } = Layout;
 
 function AppAntd() {
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <HeaderAntd />
-      
       <Content>
-        <Home />
+        <HomeAntd />
         <AboutAntd />
         <SkillsAntd />
+    
         <ServiceAntd />
-        <Qualification />
-        <Testimonial />
+        <QualificationAntd />
+        <TestimonialAntd />
         <ContactAntd />
       </Content>
-      
-      <Footer />
-      
+      <FooterAntd />
       <BackTop>
         <div style={{
           height: 40,
