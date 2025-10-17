@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Menu, Drawer, Button, Affix, Switch, Grid } from 'antd';
 import { HiMenu, HiHome, HiUser, HiDocumentText, HiCog, HiBriefcase, HiMail, HiSun, HiMoon } from 'react-icons/hi';
 import { useTheme } from '../../context/ThemeContext';
@@ -13,14 +13,14 @@ const HeaderAntd = () => {
   const screens = useBreakpoint();
   const isMobile = !screens.md;
 
-  const menuItems = [
+  const menuItems = useMemo(() => [
     { key: 'home', icon: <HiHome />, label: 'Home', href: '#home' },
     { key: 'about', icon: <HiUser />, label: 'About', href: '#about' },
     { key: 'skills', icon: <HiDocumentText />, label: 'Skills', href: '#skills' },
     { key: 'services', icon: <HiCog />, label: 'Services', href: '#services' },
     { key: 'portfolio', icon: <HiBriefcase />, label: 'Portfolio', href: '#portfolio' },
     { key: 'contact', icon: <HiMail />, label: 'Contact', href: '#contact' }
-  ];
+  ], []);
 
   const handleMenuClick = (e) => {
     setCurrent(e.key);
@@ -52,7 +52,7 @@ const HeaderAntd = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [menuItems]);
 
   return (
     <>
