@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Layout, Typography, Space, Button } from 'antd';
-import { InstagramOutlined, FacebookOutlined, SendOutlined, HeartFilled } from '@ant-design/icons';
+import { FaInstagram, FaFacebook, FaTelegram, FaHeart } from 'react-icons/fa';
 import { useTheme } from '../../context/ThemeContext';
 
 const { Footer } = Layout;
@@ -21,9 +21,9 @@ const FooterAntd = () => {
   ];
 
   const socialLinks = [
-    { icon: <InstagramOutlined />, href: 'https://www.instagram.com', color: '#E4405F' },
-    { icon: <SendOutlined />, href: 'https://telegram.org', color: '#0088cc' },
-    { icon: <FacebookOutlined />, href: 'https://www.facebook.com', color: '#1877f2' }
+    { icon: <FaInstagram />, href: 'https://www.instagram.com', color: '#E4405F' },
+    { icon: <FaTelegram />, href: 'https://telegram.org', color: '#0088cc' },
+    { icon: <FaFacebook />, href: 'https://www.facebook.com', color: '#1877f2' }
   ];
 
   return (
@@ -244,7 +244,7 @@ const FooterAntd = () => {
                 flexWrap: 'wrap'
               }}>
                 © 2024 Chan. Made with 
-                <HeartFilled style={{ color: '#ff6b6b', animation: 'pulse 2s ease-in-out infinite' }} />
+                <FaHeart style={{ color: '#ff6b6b', animation: 'pulse 2s ease-in-out infinite' }} />
                 All Rights Reserved
               </Text>
             </div>

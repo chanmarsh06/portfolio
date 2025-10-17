@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Carousel, Card, Avatar, Typography, Rate, Button } from 'antd';
-import { LeftOutlined, RightOutlined } from '@ant-design/icons';
+import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { useTheme } from '../../context/ThemeContext';
 import { Data } from './Data';
 
@@ -136,7 +136,7 @@ const TestimonialAntd = () => {
             }}>
               <Button 
                 className="control-btn"
-                icon={<LeftOutlined />}
+                icon={<HiChevronLeft />}
                 onClick={handlePrevious}
               />
             </div>
@@ -150,7 +150,7 @@ const TestimonialAntd = () => {
             }}>
               <Button 
                 className="control-btn"
-                icon={<RightOutlined />}
+                icon={<HiChevronRight />}
                 onClick={handleNext}
               />
             </div>

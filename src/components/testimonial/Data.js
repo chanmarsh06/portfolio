@@ -1,27 +1,27 @@
-import image1 from "../../assests/testimonial1.png";
-import image2 from "../../assests/testimonial2.png";
-import image3 from "../../assests/testimonial3.png";
+import image1 from "../../assests/bindu_henna.png";
+import image2 from "../../assests/Bindu_client_1.png";
+import image3 from "../../assests/bindu_client.png";
 
 export const Data = [
   {
     id: 1,
     image: image1,
-    title: "Milk",
+    title: "Henna Art Studio",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptates?",
+      "“Absolutely loved the website design! It perfectly represents my henna artistry — elegant, aesthetic, and easy for clients to explore my portfolio and bookings.” – Client: Bindu (Henna Artist)",
   },
   {
     id: 2,
     image: image2,
-    title: "Virat",
+    title: "Personal Portfolio",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptates?",
+      "“A stunning, modern portfolio that showcases my skills beautifully. Smooth animations and a clean UI made it exactly what I envisioned for my personal brand.” – Client: Virat (Creative Freelancer)",
   },
   {
     id: 3,
     image: image3,
-    title: "Chan",
+    title: "Online Clothing & Stitching Store",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptates?",
+      "“Amazing work! The e-commerce site is responsive, fast, and makes product customization simple. My customers find it easy to order and track stitching services online.” – Client: Chan (Fashion Boutique Owner)",
   },
 ];

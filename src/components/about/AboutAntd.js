@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Button, Row, Col, Typography, Space } from 'antd';
-import { DownloadOutlined, TrophyOutlined, FolderOpenOutlined, SmileOutlined } from '@ant-design/icons';
+import { HiDownload } from 'react-icons/hi';
+import { HiTrophy, HiFolderOpen, HiFaceSmile } from 'react-icons/hi2';
+
 import { useTheme } from '../../context/ThemeContext';
 import AboutImg from '../../assests/chan.png';
-import CV from '../../assests/chan_resume.pdf';
+import CV from '../../assests/Chandrasekaran_React_Resume.pdf';
 
 const { Title, Paragraph } = Typography;
 
@@ -16,10 +18,14 @@ const AboutAntd = () => {
   }, []);
 
   const infoData = [
-    { icon: <TrophyOutlined />, title: 'Experience', subtitle: '3+ Years Working', color: '#ff6b6b' },
-    { icon: <FolderOpenOutlined />, title: 'Completed', subtitle: '48+ Projects', color: '#4ecdc4' },
-    { icon: <SmileOutlined />, title: 'Support', subtitle: 'Online 24/7', color: '#45b7d1' }
+    { icon: <HiTrophy />, title: 'Experience', subtitle: '2.6+ Years Working', color: '#ff6b6b' },
+    { icon: <HiFolderOpen />, title: 'Completed', subtitle: '25+ Projects', color: '#4ecdc4' },
+    { icon: <HiFaceSmile />, title: 'Support', subtitle: 'Online 24/7', color: '#45b7d1' }
   ];
+
+  const handleDownload = () => {
+    window.open(CV, '_blank'); // Opens the PDF preview in a new tab
+  };
 
   return (
     <>
@@ -38,8 +44,8 @@ const AboutAntd = () => {
         }
       `}</style>
 
-      <section id="about" style={{ 
-        padding: '90px 0', 
+      <section id="about" style={{
+        padding: '90px 0',
         background: colors.gradient.background,
         position: 'relative',
         overflow: 'hidden'
@@ -50,8 +56,8 @@ const AboutAntd = () => {
             textAlign: 'center',
             marginBottom: '40px'
           }}>
-            <Title level={2} style={{ 
-              marginBottom: '4px', 
+            <Title level={2} style={{
+              marginBottom: '4px',
               fontSize: 'clamp(2rem, 4vw, 3rem)',
               color: colors.text
             }}>
@@ -104,10 +110,10 @@ const AboutAntd = () => {
                   <Row gutter={[16, 16]}>
                     {infoData.map((item, index) => (
                       <Col xs={24} sm={8} key={index}>
-                        <Card 
-                          hoverable 
-                          style={{ 
-                            textAlign: 'center', 
+                        <Card
+                          hoverable
+                          style={{
+                            textAlign: 'center',
                             height: '140px',
                             background: colors.gradient.card,
                             backdropFilter: 'blur(10px)',
@@ -119,8 +125,8 @@ const AboutAntd = () => {
                           bodyStyle={{ padding: '20px' }}
                         >
                           <Space direction="vertical" size="small" style={{ width: '100%' }}>
-                            <div style={{ 
-                              fontSize: '28px', 
+                            <div style={{
+                              fontSize: '28px',
                               color: item.color,
                               background: `${item.color}20`,
                               width: '50px',
@@ -152,25 +158,25 @@ const AboutAntd = () => {
                     borderRadius: '20px',
                     boxShadow: '0 8px 32px rgba(0,0,0,0.1)'
                   }}>
-                    <Paragraph style={{ 
-                      fontSize: '16px', 
-                      lineHeight: '1.8', 
+                    <Paragraph style={{
+                      fontSize: '16px',
+                      lineHeight: '1.8',
                       color: colors.textSecondary,
-                      margin: 0
+                      margin: 0,
+                      textAlign: { xs: 'center', md: 'left' },
                     }}>
-                      Passionate full-stack developer with expertise in modern web technologies. 
-                      I create responsive, user-friendly applications that deliver exceptional user experiences. 
-                      Always eager to learn new technologies and take on challenging projects that push the boundaries of innovation.
+                      I’m a passionate MERN Stack Developer with 2.5+ years of experience building scalable applications using React.js, TypeScript, and Redux Toolkit, specializing in high-performance UIs, state management, and API integration. I’ve developed HRMS portals, performance management systems, and template engines, delivering 30–40% efficiency improvements through reusable component architecture. Currently upskilling in Node.js, Express, and MongoDB to transition into full-stack development, and when I’m not coding, I’m on the cricket field—fueling discipline, competitiveness, and teamwork in everything I build.
                     </Paragraph>
                   </Card>
 
                   <Button
                     type="primary"
                     size="large"
-                    icon={<DownloadOutlined />}
+                    icon={<HiDownload />}
+                    onClick={handleDownload}
                     href={CV}
                     download
-                    style={{ 
+                    style={{
                       borderRadius: '25px',
                       background: 'linear-gradient(135deg, #ff6b6b 0%, #feca57 100%)',
                       border: 'none',
