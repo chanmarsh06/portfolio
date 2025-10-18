@@ -6,6 +6,7 @@ import { ThemeProvider, useTheme } from './context/ThemeContext';
 import './index.css';
 
 const ThemedApp = () => {
+  // dark mode theme integration
   const { colors, isDark } = useTheme();
   
   const antdTheme = {
