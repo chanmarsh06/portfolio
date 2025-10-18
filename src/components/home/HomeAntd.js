@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Row, Col, Typography, Button, Space, Tag } from "antd";
+import { Row, Col, Typography, Button, Space } from "antd";
 import { TypeAnimation } from "react-type-animation";
 import { HiMail, HiDownload } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
