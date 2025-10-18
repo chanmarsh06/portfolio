@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { ConfigProvider, theme } from 'antd';
 import AppAntd from './AppAntd';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
+import './index.css';
 
 const ThemedApp = () => {
   const { colors, isDark } = useTheme();

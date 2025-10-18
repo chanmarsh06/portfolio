@@ -50,7 +50,7 @@ const AboutAntd = () => {
         position: 'relative',
         overflow: 'hidden'
       }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1 }}>
+        <div className="global-container">
           <div style={{
             animation: isVisible ? 'fadeIn 1s ease-out' : 'none',
             textAlign: 'center',
@@ -165,7 +165,8 @@ const AboutAntd = () => {
                       margin: 0,
                       textAlign: { xs: 'center', md: 'left' },
                     }}>
-                      I’m a passionate MERN Stack Developer with 2.5+ years of experience building scalable applications using React.js, TypeScript, and Redux Toolkit, specializing in high-performance UIs, state management, and API integration. I’ve developed HRMS portals, performance management systems, and template engines, delivering 30–40% efficiency improvements through reusable component architecture. Currently upskilling in Node.js, Express, and MongoDB to transition into full-stack development, and when I’m not coding, I’m on the cricket field—fueling discipline, competitiveness, and teamwork in everything I build.
+                      Frontend Developer with 2.5+ years of experience building scalable, high-performance web applications using React.js, TypeScript, and Redux Toolkit. Passionate about delivering elegant, optimized UI solutions and expanding into full-stack development with Node.js and MongoDB. Experienced in CI/CD, RESTful APIs, and Agile environments.
+                      {/* I’m a passionate MERN Stack Developer with 2.5+ years of experience building scalable applications using React.js, TypeScript, and Redux Toolkit, specializing in high-performance UIs, state management, and API integration. I’ve developed HRMS portals, performance management systems, and template engines, delivering 30–40% efficiency improvements through reusable component architecture. Currently upskilling in Node.js, Express, and MongoDB to transition into full-stack development, and when I’m not coding, I’m on the cricket field—fueling discipline, competitiveness, and teamwork in everything I build. */}
                     </Paragraph>
                   </Card>
 

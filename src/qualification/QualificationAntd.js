@@ -234,15 +234,7 @@ const QualificationAntd = () => {
           overflow: "hidden",
         }}
       >
-        <div
-          style={{
-            maxWidth: "1200px",
-            margin: "0 auto",
-            padding: "0 24px",
-            position: "relative",
-            zIndex: 1,
-          }}
-        >
+        <div className="global-container">
           <div
             style={{
               animation: isVisible ? "fadeIn 1s ease-out" : "none",
